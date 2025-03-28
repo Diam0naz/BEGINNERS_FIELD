@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vechicle-rentals</title>
+    <style>
+      .design {
+        width: 1000px;
+        height: 500px;
+        border: none;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .img {
+        margin: 0;
+        padding: 0;
+        opacity: 0.7;
+        border-radius: 50%;
+        mix-blend-mode: normal;
+        mix-blend-mode: color-burn;
+      }
+      .cir {
+        margin: 0;
+        padding: 0;
+        opacity: 0.4;
+        border-radius: 100%;
+        mix-blend-mode: multiply;
+      }
+      .btn-sed {
+        background-color: whitesmoke;
+        border-radius: 25px;
+        height: 45px;
+        border: none;
+        width: 160px;
+        padding: auto;
+        font-weight: 800;
+        color: #da7d04;
+        margin-top: 240px;
+        font-family: "Quicksand", serif;
+      }
+      .btn-sed:hover {
+        transition-delay: 2ms;
+        background-color: #da7d04;
+        color: white;
+      }
+      .btn-sed:active {
+        background-color: rgb(236, 82, 11);
+      }
+      .btn-lux {
+        background-color: whitesmoke;
+        border-radius: 25px;
+        border: none;
+        height: 45px;
+        width: 160px;
+        padding: auto;
+        margin-top: 240px;
+        font-weight: 800;
+        color: rgb(8, 29, 1);
+        font-family: "Quicksand", serif;
+      }
+      .btn-lux:hover {
+        transition-delay: 2ms;
+        background-color: rgb(18, 66, 1);
+        color: white;
+      }
+      .btn-lux:active {
+        background-color: rgb(17, 94, 3);
+      }
+      .btn-suv {
+        background-color: whitesmoke;
+        border-radius: 25px;
+        height: 45px;
+        border: none;
+        width: 160px;
+        padding: auto;
+        margin-top: 240px;
+        font-weight: 800;
+        color: rgb(7, 90, 83);
+      }
+      .btn-suv:hover {
+        transition-delay: 2ms;
+
+        background-color: rgb(7, 90, 83);
+        color: white;
+      }
+      .btn-suv:active {
+        background-color: rgb(13, 145, 116);
+      }
+      .sedan {
+        text-align: left;
+        font-weight: 200;
+        color: white;
+        border: none;
+        width: 33.3%;
+        float: left;
+        height: 590px;
+        padding: 80px 50px;
+        box-sizing: border-box;
+        margin: auto;
+        background-color: #e38527;
+        font-family: "Quicksand", serif;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        position: relative;
+      }
+      .sedan button {
+        position: absolute;
+        top: 240px;
+      }
+      .sedan img {
+        position: absolute;
+        top: 55px;
+        left: 65px;
+      }
+      .sedan .cir {
+        position: absolute;
+        top: 55px;
+        left: 40px;
+      }
+      .SUVS {
+        text-align: left;
+        box-sizing: border-box;
+        border: none;
+        width: 33.3%;
+        float: left;
+        height: 590px;
+        padding: 80px 50px;
+        font-weight: 200;
+        background-color: #006973;
+        color: white;
+        position: relative;
+      }
+      .SUVS button {
+        position: absolute;
+        top: 240px;
+      }
+      .SUVS img {
+        position: absolute;
+        top: 55px;
+        left: 65px;
+      }
+      .SUVS .cir {
+        position: absolute;
+        top: 55px;
+        left: 40px;
+      }
+      .luxury {
+        text-align: left;
+        box-sizing: border-box;
+        border: none;
+        width: 33.3%;
+        float: left;
+        color: white;
+        font-weight: 200;
+        height: 590px;
+        padding: 80px 50px;
+        background-color: rgb(8, 29, 1);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: relative;
+      }
+      .luxury button {
+        position: absolute;
+        top: 240px;
+      }
+      .luxury img {
+        position: absolute;
+        top: 55px;
+        left: 65px;
+      }
+      .luxury .cir {
+        position: absolute;
+        top: 55px;
+        left: 40px;
+      }
+      p {
+        text-align: left;
+        text-wrap: 2em;
+        padding-bottom: 60px;
+        line-height: 2em;
+        font-size: 1.5em;
+        font-size: medium;
+        height: 50;
+        font-family: "Quicksand", serif;
+        width: 50;
+      }
+      /** x{
+                transform: rotate(180deg) scaleY(-1);
+            }
+                to rotate an image to rest in opposite direction
+            **/
+      h3 {
+        font-size: 50px;
+        border-bottom: 20px;
+        font-family: "Smooch Sans";
+        font-weight: 500;
+      }
+      .p {
+        height: 15px;
+        width: 250px;
+        display: block;
+        margin-top: 35px;
+        padding-bottom: 0;
+      }
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Smooch+Sans:wght@100..900&display=swap");
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="design">
+      <section class="sedan">
+        <img
+          src="https://icon2.cleanpng.com/20180422/rpw/avt1i9h95.webp"
+          alt="icon-shade"
+          width="55px"
+          height="45px"
+          class="cir"
+        />
+        <img
+          src="data:image/png;base64,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"
+          alt="SEDAN"
+          width="45px"
+          height="45px"
+          class="img"
+        />
+        <h3>SEDANS</h3>
+        <div class="p">
+          <p>
+            Choose a sedan for it's affordability and excellent fuel economy.
+            Ideal for cruising in the city or on your next road trip.
+          </p>
+        </div>
+        <div>
+          <button class="btn-sed">Learn More</button>
+        </div>
+      </section>
+      <section class="SUVS">
+        <img
+          src="https://icon2.cleanpng.com/20180422/rpw/avt1i9h95.webp"
+          alt="icon-shade"
+          width="55px"
+          height="45px"
+          class="cir"
+        />
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACLElEQVR4nO2Xu27UQBSGbVCKFAStBBukBEGBoKClyL5FpECRCxcloViQEM8ABYiCPlIuTQKKklRJHiAXCgSvQLMNiUSUixcQRfZDEx2vBq/ttdeezS6aT7K0njl7/vPP2DNjx7FYLBaLxWKxnAG4wANgBzgkP06BCjAD3HRMAFwQAdMcAEMmDEyKwAnwBLgc6D8jQZ6GOBmcO8CqdFeC+fN4dL5J8vsRMS0b0PouArsS8jZb1f8mHtJGxk1bWJo44B5QA34DN7LW7id9J7rvWy0sTRywKGFLrdYcTPgC+A7cjYlRK9N2glxN49TIywzU1Iw43QjwRmZhy+lGgEvAnpgYzpLoE+1lR9N+Lm0/ga/AR+A18AgoAVeTGGg39fcD6EkwgEfAF83cKFBoMOCcI8AVWcofAq+AD1J01HHmD/CyYwwkMFfSzK3L2Uox0vEGwgCmpOzP3WqgV8r+1ZUGFPW6rYEOmIFj+T0YcsR+LOt0Va5d2WRcAwW5SfWA6/4eoW7W5GZDNwEsxGwu8wYMzCbRUzUCm9K+ohpuAz8i/ugB00A/cA14Km2m8FLoqU/TW76rAWBZe5x8yiEjpQRMUQ7RKwdiVI0r9eIjplN9FyuKIX0F6fMyPjV6zv0YvWJqPTkdNktYzaF2M3raCTFsSp8Fj8VZIW89YNyfNnnm++TSX6qxHA2M566nlq6Yl20ur+KN6cnGMiEf6Z5c2zJapjayiXbpWSwWi+X/4C+yyPCfRS5LDwAAAABJRU5ErkJggg=="
+          alt="suv"
+        />
+        <h3>SUVS</h3>
+        <div class="p">
+          <p>
+            Take an SUV for its spacious interior, power, and versatility.
+            Perfect for your next family vacation and off-road adventures.
+          </p>
+        </div>
+        <div>
+          <button class="btn-suv">Learn More</button>
+        </div>
+      </section>
+      <!--LUX for luxury o!-->
+      <section class="luxury">
+        <img
+          src="https://icon2.cleanpng.com/20180422/rpw/avt1i9h95.webp"
+          alt="icon-shade"
+          width="55px"
+          height="45px"
+          class="cir"
+        />
+        <img
+          src="data:image/png;base64,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"
+          alt="LUXURY"
+          width="45px"
+          height="45px"
+          class="img"
+        />
+
+        <h3>LUXURY</h3>
+        <div class="p">
+          <p>
+            Cruise in the best car brands without the bloated prices. Enjoy the
+            enhanced comfort of a luxury rental and arrive in style.
+          </p>
+        </div>
+        <div>
+          <button class="btn-lux">Learn More</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
